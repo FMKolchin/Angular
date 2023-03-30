@@ -1,0 +1,43 @@
+
+<div class="parent">
+    <div class="wrapper">
+        
+        <p>
+            <object data="../../../assets/icons/phone-solid.svg" type="image/svg+xml" class="icon"></object>
+            Phone number: 053-9927154</p>
+        <p>
+            <object data="../../../assets/icons/at-solid.svg" type="image/svg+xml" class="icon"></object>
+            Email address: Chaim.Technican@gmail.com</p>
+        <p>
+            <object data="../../../assets/icons/whatsapp.svg" type="image/svg+xml" class="icon"></object>
+            whatsapp: 053-9927154</p>
+        <p>
+            <object data="../../../assets/icons/location-dot-solid.svg" type="image/svg+xml" class="icon"></object>
+            Address: 158 Coles Way, Lakewood, NJ , US<br>
+        </p>
+    </div>
+<div class="wrapper">
+<form action="/home">
+    <div class="mb-3">
+        <label for="name" class="form-label">Name:</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter name" name="name">
+    </div>
+    <div class="mb-3 mt-3">
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+  
+    <div class="mb-3">
+        <label for="comment">Comments:</label>
+        <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+    </div>
+
+    <div class="form-check mb-3">
+        <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" name="remember"> send me updates to my email
+        </label>
+    </div>
+    <button routerLink="/home" (click)="send()" class="btn btn-light">Send</button>
+</form>
+</div>
+</div>

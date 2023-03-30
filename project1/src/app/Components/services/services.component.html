@@ -1,0 +1,19 @@
+<div class="row wrapper">
+<div class=" col-lg-3 col-sm grid-item" *ngFor="let service of services">
+    <!-- <app-service [service]="service"></app-service> -->
+    <div class="card" style="width:300px">
+        <img *ngIf="service.images!=null && service.images != undefined" class="card-img-top"
+        src={{url}}{{service.images[0]}} alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">{{service.name}}</h4>
+          <p class="card-text">{{service.description|shortText:80 }}</p>
+          <button  (click)="this.moreDetailsIdFunc(service)"  class="btn btn-light">▼</button>
+          
+          <router-outlet *ngIf="moreDetailsId === service.id"></router-outlet>
+        </div>
+          
+        
+      </div>
+      
+</div>
+</div>

@@ -1,0 +1,54 @@
+<div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-4">
+        <!-- <h2>{{service.name}}</h2> -->
+        <!-- <h5>Photo of me:</h5> -->
+        <div class="fakeimg">
+            <img src="../../../assets/images/{{service.images[0]}}" alt="" width="300px">
+        </div>
+        <!-- <p>{{service.description}}</p> -->
+        <h4 class="mt-4">Price Range</h4>
+        <b>best service for the cheepest prices...</b>
+        <p>{{service.priceRange.low}} - {{service.priceRange.high}} $.</p>
+        <h4 class="mt-4">Average Service Time:</h4>
+        <b>Happy to help you, whenever you need and whatever you need</b>
+        <p>{{service.avgServiceTime}} hours in average.</p>
+
+        <!-- <ul class="nav nav-pills flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul> -->
+        <hr class="d-sm-none">
+      </div>
+      <div class="col-lg-8">
+        <h2>{{service.name}}</h2>
+        <!-- <h5>Title description, Dec 7, 2020</h5> -->
+        <!-- <div class="fakeimg">Fake Image</div> -->
+        <p>{{service.description}}</p>
+        <!-- <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p> -->
+  
+        <!-- <h2 class="mt-5">TITLE HEADING</h2>
+        <h5>Title description, Sep 2, 2020</h5>
+        <div class="fakeimg">Fake Image</div>
+        <p>Some text..</p>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p> -->
+      </div>
+    </div>
+    <div class="  parent">
+      <div class="wrapper">
+    <div class="row ">
+    <div class="col-sm" *ngFor="let image of service.images">
+      <img class="image" src="../../../assets/images/{{image}}" alt="" width="300px">
+    </div>
+  </div>
+</div></div></div>

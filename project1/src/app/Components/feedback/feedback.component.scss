@@ -1,0 +1,45 @@
+
+.card-header{
+    font-weight: bold;
+    padding-bottom: 0px;
+}
+.card-body,.card-footer{
+    background-color:rgba(128, 128, 128, 0.282);
+}
+.card-footer{
+    font-size: xx-small;
+}
+.icon-circle{
+    filter: invert(27%) sepia(20%) saturate(2898%) hue-rotate(104deg) brightness(103%) contrast(108%);
+    width:35px;
+    height: 35px;
+}
+.heart{
+    filter:  invert(95%) sepia(100%) saturate(1%) hue-rotate(12deg) brightness(102%) contrast(101%);
+    width:25px;
+    height: 25px;
+}
+.card-header>div{
+    vertical-align: center;
+    display: inline-block;
+}
+.likeBtn{
+    border:none;
+    background-color: #006826;
+    font-size: x-large;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top:0px;
+    padding-bottom:6px;
+  
+    
+}
+.tab{
+    font-weight:normal;
+    text-align: right;
+}
+.manyLike{
+    color:#059c3c;
+}
+
+

@@ -1,0 +1,8 @@
+<div class=" d-flex sticky-top">
+<button routerLink="/add-feedback" class="btn btn-light ms-auto addBtn">add feedback</button>
+</div><div class="wrapper" *ngFor="let feedback of feedbacks">
+    <app-feedback [feedback]="feedback"></app-feedback>
+</div>
+
+
+
